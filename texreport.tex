@@ -1,0 +1,134 @@
+% CSC 300: Professional Responsibilities
+% Dr. Clark Turner
+
+% Two Column Format
+\documentclass[11pt]{article}
+%this allows us to specify sections to be single or multi column so that things
+% like title page and table of contents are single column
+\usepackage{multicol}
+
+\usepackage{setspace}
+\usepackage{url}
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{letterpaper}
+
+\begin{document}
+
+\title{\vfill Ethical Government Computer Break-ins for Human Rights} %\vfill gives us the black space at the top of the page
+\author{
+By Orion Miller\vspace{10pt} \\
+CSC 300: Professional Responsibilities\vspace{10pt} \\
+Dr. Clark Turner\vspace{10pt} \\
+}
+%\date{October 22, 2010} %Or use \today for today's Date
+\date{\today}
+
+\maketitle
+
+\vfill  %in combinaion with \newpage this forces the abstract to the bottom of the page
+\begin{abstract}
+Governments like Syria and China are using lots of money to have computer hardware to prevent their citizens to freely exchange ideas over the internet. In some cases the sharing of information over the internet in a country like Syria can result in death because the expressed thoughts go against the current regime \cite{SixthJournalistKilled}. I argue that it would be ethical for citizens to break in to government computers strictly to allow citizens to freely exchange thoughts and information. I will use Rawlsian Justice Principle, Act Utilitarianism, and the UN's 'Universal Declaration of Human Rights' to prove that it can be ethical to break-in to government computers to provide citizens their deserved human rights.
+\end{abstract}
+
+\thispagestyle{empty} %remove page number from title page
+\newpage
+
+
+%Create a table of contents with all headings of level 3 and above.
+%http://en.wikibooks.org/wiki/LaTeX/Document_Structure#Table_of_contents has
+%info on customizing the table of contents
+\thispagestyle{empty}  %Remove page number from TOC
+\tableofcontents
+
+\newpage
+
+%end the 1 column format
+
+
+%start 2 column format
+\begin{multicols}{2}
+%Start numbering first page of content as page 1
+\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%
+%%% Known Facts  %%%
+%%%%%%%%%%%%%%%%%%%%
+\section{Facts}
+"More than 12,000 people have lost their lives since March 2011" in Syria \cite{WhatIsGoingOn}. The government killing has also targeted journalists like Abdul Ghani Kaakeh, "...the sixth citizen journalist killed by the government for spreading information about what is going on in Syria to the world" \cite{SixthJournalistKilled}.
+Anonymous and Wikileaks have aided by releasing "two million e-mails from Syrian political figures, ministries and companies" \cite{SyrianFiles}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Research Question %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Question}
+Would it be ethical for hackers to break into the computers of oppressive governments to ensure human rights like freedom of speech online?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Extant Arguments from External Sources %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Extant Arguments}
+\subsection{Arguments For}
+
+Worms can be created and used to aid preventing governments such as China sensoring its citizens \cite{GoodWormsHumanRights}.
+Viruses can be designed such that they do good \cite{MidNyte}.
+Ethical Hackers exist and can provide for the greater good by helping secure insecure systems and inform their operators \cite{EthicalHackingRedux}.
+
+
+\subsection{Arguments Against}
+Breaking into systems is wrong. It is just like breaking into someons house \cite{ComputerBreakinsEthical}.
+
+
+%%%%%%%%%%%%%%%%
+%%% Analysis %%%
+%%%%%%%%%%%%%%%%
+\section{Analysis}
+\begin{itemize}
+   \item Should start with a paragraph showing why the SE Code applies to your focusquestion.
+   \item Sub-headings to delineate your lines of reasoning are required.
+   \item All arguments must be thoroughly supported by reason and logic.
+   \item All claims must be supported by reputable primary sources and formal data.
+   \item SE Code must be central to the argumentation
+   \begin{itemize}
+      \item You should have 2-4 distinct sections of the SE code utilized in your analysis
+      \begin{itemize}
+         \item If section 1 is central to your argument, it is only one of the code sections covered. Do not rely solely on section one. Ex: 1.01-1.04 will not suffice for all of your SE Code based arguments and citations.
+         \item If discussion about Òpublic goodÓ is used, there must be data to support it. Simply writing Òit benefits the general public because it would make many people happyÓ is insufficient.
+      \end{itemize}
+   \end{itemize}
+   \item Utilitarian and deontological analysis must be present but not be separate sections
+   \item Class reading must be referenced as appropriate (at least one paper must be used as the basis of one of the arguments).
+   \item There should be a clear cohesiveness to the analysis such that each argument logically flows into the next and gently directs the reader toward your conclusion while implicitly providing answers to any doubts they may have through logic and data.
+   \item Opinions > dev/null. \cite{handout}
+\end{itemize}
+
+Look at Jason Anderson's how to write a term paper (currently linked as the paper template) for information on how to write this section.  An example of possible sections follows
+\subsection{Why the SE Code Applies}
+\subsection{Argument 1}
+\subsubsection{Code principle 1 that applies}
+\subsubsection{Code principle 2 that applies}
+\subsection{Argument 2}
+\subsubsection{Code principle 1 that applies}
+\subsubsection{Code principle 2 that applies}
+
+\subsubsection*{}
+Remember to weave the class papers and other ethical systems arguments in with the se code arguments they shouldn't be separate sections.
+
+%%%%%%%%%%%%%%%%%%
+%%% Conclusion %%%
+%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+The conclusion is a summary of your entire anal- ysis. It should reiterate the answer your audience has been forming while reading your analysis. New information should never be introduced in your conclusion. \cite{texTemp}
+
+%end the two column format
+\end{multicols}
+\newpage
+
+%cite all the references from the bibtex you haven't explicitly cited
+\nocite{*}
+
+\bibliographystyle{IEEEannot}
+
+\bibliography{texreport}
+
+\end{document}
