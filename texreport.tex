@@ -6,17 +6,20 @@
 %like title page and table of contents are single column
 \usepackage{multicol}
 
-\usepackage{setspace} \usepackage{url}
+\usepackage{setspace} 
+
+\usepackage{url}
 
 %%% PAGE DIMENSIONS
-\usepackage{geometry} % to change the page dimensions \geometry{letterpaper}
+\usepackage{geometry} % to change the page dimensions 
+\geometry{letterpaper}
 
 \begin{document}
 
 \title{\vfill Ethical Government Computer Break-ins for Human Rights} %\vfill
 gives us the black space at the top of the page \author{ By Orion
-  Miller\vspace{10pt} \\ CSC 300: Professional Responsibilities\vspace{10pt} \\
-  Dr. Clark Turner\vspace{10pt} \\ }
+Miller\vspace{10pt} \\ CSC 300: Professional Responsibilities\vspace{10pt} \\
+Dr. Clark Turner\vspace{10pt} \\ }
 %\date{October 22, 2010} %Or use \today for today's Date
 \date{\today}
 
@@ -25,13 +28,18 @@ gives us the black space at the top of the page \author{ By Orion
 \vfill  %in combinaion with \newpage this forces the abstract to the bottom of
 \begin{abstract} DA DA DA\end{abstract}
 
-\thispagestyle{empty} %remove page number from title page \newpage
+\thispagestyle{empty} %remove page number from title page 
+
+\newpage
 
 
 %Create a table of contents with all headings of level 3 and above.
 %http://en.wikibooks.org/wiki/LaTeX/Document_Structure#Table_of_contents has
 %info on customizing the table of contents
-\thispagestyle{empty}  %Remove page number from TOC \tableofcontents
+
+\thispagestyle{empty}  %Remove page number from TOC 
+
+\tableofcontents
 
 \newpage
 
@@ -47,6 +55,8 @@ gives us the black space at the top of the page \author{ By Orion
 %%%%%%%%%%%%%%%%%%%%
 \section{Facts} 
 
+\subsection{Iran's Presidential Election}
+
 In Iran, the sparks of political unrest began to fly in the summer of 2009.
 Friction started with the highly anticipated outcome the Iran's race for
 presidency. Elections took place on June 12th. To the surprise of many Mahmoud
@@ -54,11 +64,15 @@ Ahmadinajad won with a lanslide victory of well above 60\% of the vote
 \cite{TheIranianVote, IranianElectionResultsByProvince}, making this
 Ahmadinjad's second term as the President of Iran.
 
+\subsection{The Response}
+
 Iranian citizens and many others were outraged with the results of the election.
 Laura Secor, from the New York, succinctly sumed up the voice of the people by
 stating \begin{quotation} There can be no question that June 12, 2009, Iranian
 presidential election was stolen. \cite{TheIranianVote}\end{quotation} Citizens
 swiftly began to vocalize their opinions.
+
+\subsection{Protests Begin}
 
 Protests began on June 13 and picked up force not only off-line but online as
 well. By the fifth day of protest hundreds of thousands of demonstrators took to
@@ -67,6 +81,8 @@ the streets of Tehran in opposition of the election's outcome
 Twitterverse\footnote{Twitterverse is a name referring everything relating to
 the social network Twitter.} exploded with tweets from people who weren't having
 it, both in English and in Farsi.'' \cite{WhyTwitterIsTheMedium}
+
+\subsection{Iran Tries to Stop the Protests}
 
 Iran's government tried to douse out the dissent. The government's approach was
 to have an all around black out of information and organization. They sent
@@ -86,6 +102,7 @@ and share messages, up to 140 characters long.\cite{WhatIsTwitter}}
 
 %%TWITTER FOOTNOTE - add source from "What is Twitter, a social network or a
 %% News media
+\subsection{The Role of Social Networks}
 
 Twitter began to prove itself an invaluabale tool for protesters. It source of
 information and played a vital role during the protestes because traditional
@@ -94,9 +111,13 @@ means of sharing informations such as newspapers were breaking down. Iran,
 censors had whited-out news stories, Twitter was delivering information from
 street level, in real time.''\cite{WhyTwitterIsTheMedium}
 
+\subsection{Citizens use Tor to Bypass Censorship}
+
 With the government filtering out vital lifelines of information and means of
 organization citizens began to find alternatives to connect to Twitter. One of
 the tools that proved useful was Tor.
+
+\subsection{What is Tor}
 
 Tor is a tool and network that provides users a means way of connecting with
 websites encrypted and anonymously. From Tor's website under a page about the
@@ -104,6 +125,8 @@ the 'Users of Tor' they state that, ``Tor was origianlly designed, implemented
 and deployed as a third-generation onion routing project of the Naval Research
 Laboratory... Today, it is used every day for a wide variety of purposes by the
 military, journalists, law enofrcement officers, activists, and many others.
+
+\subsection{Iran Blocks Tor}
 
 Fast forward two years and Iran is still under the same regime of Ahmadinajad.
 On September 14, 2011 the Iranian government added a filter rule to their
@@ -124,12 +147,20 @@ suggesteds users of to to upgrade to version Tor 0.2.2.33 or Tor
 %%% Research Question %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Research Question} 
-
 Was it ethical for the Tor project to release a same day patch specifically
 enabling Iranians to bypass Iran's firewall when the government explicitely
 filtered Tor traffic starting September 14, 2011.
 
-\section{Importance}
+\subsection{Importance}
+
+The Internet, blogs, and social networks have proven to play a critical role in
+Iranian political discorse at least for the past 3 years. With Iran's government
+strive to squander any form of freedom of expression or press by force both on-
+and off-line has only hightened the need for a means to safely, privately, and
+without restriction to communicate online. The Tor project strives to make Tor
+able to provide such services to the world and in this case specifically to aid
+Iranians. There project and focused reason to patch their software could have
+grave implications for Iranian users.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Extant Arguments from External Sources %%%
@@ -138,13 +169,15 @@ filtered Tor traffic starting September 14, 2011.
 
 
 
-\subsection{Arguments For}
+\subsection{Arguments For Tor}
 
 %%people don't find tor EVIL
 
 %%3rd parties think the censorship is bad
 
-\subsection{Arguments Against}
+\subsection{Arguments Against Tor}
+
+\subsection{Arguments Summary}
 
 %%what tor can enable
 
@@ -154,40 +187,10 @@ filtered Tor traffic starting September 14, 2011.
 %%%%%%%%%%%%%%%%
 %%% Analysis %%%
 %%%%%%%%%%%%%%%%
-\section{Analysis} \begin{itemize} \item Should start with a paragraph showing
-    why the SE Code applies to your focusquestion.  \item Sub-headings to
-    delineate your lines of reasoning are required.  \item All arguments must be
-      thoroughly supported by reason and logic.  \item All claims must be
-      supported by reputable primary sources and formal data.  \item SE Code
-      must be central to the argumentation \begin{itemize} \item You should have
-            2-4 distinct sections of the SE code utilized in your analysis
-          \begin{itemize} \item If section 1 is central to your argument, it is
-                only one of the code sections covered. Do not rely solely on
-                section one. Ex: 1.01-1.04 will not suffice for all of your SE
-                Code based arguments and citations.  \item If discussion about
-                  Òpublic goodÓ is used, there must be data to support it.
-                  Simply writing Òit benefits the general public because it
-                  would make many people happyÓ is insufficient.  \end{itemize}
-            \end{itemize} \item Utilitarian and deontological analysis must be
-            present but not be separate sections \item Class reading must be
-              referenced as appropriate (at least one paper must be used as the
-              basis of one of the arguments).  \item There should be a clear
-                cohesiveness to the analysis such that each argument logically
-                flows into the next and gently directs the reader toward your
-                conclusion while implicitly providing answers to any doubts they
-                may have through logic and data.  \item Opinions > dev/null.
-              \cite{handout} \end{itemize}
+\section{Analysis} 
 
-Look at Jason Anderson's how to write a term paper (currently linked as the
-paper template) for information on how to write this section.  An example of
-possible sections follows \subsection{Why the SE Code Applies}
-\subsection{Argument 1} \subsubsection{Code principle 1 that applies}
-\subsubsection{Code principle 2 that applies} \subsection{Argument 2}
-\subsubsection{Code principle 1 that applies} \subsubsection{Code principle 2
-that applies}
 
-\subsubsection*{} Remember to weave the class papers and other ethical systems
-arguments in with the se code arguments they shouldn't be separate sections.
+
 
 %%%%%%%%%%%%%%%%%%
 %%% Conclusion %%%
