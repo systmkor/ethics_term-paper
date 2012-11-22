@@ -5,6 +5,8 @@
 %this allows us to specify sections to be single or multi column so that things
 %like title page and table of contents are single column
 \usepackage{multicol}
+\usepackage{indentfirst}
+\usepackage[english]{babel}
 
 \usepackage{setspace} 
 
@@ -16,26 +18,25 @@
 
 \begin{document}
 
-\title{\vfill Ethical Government Computer Break-ins for Human Rights} %\vfill
-gives us the black space at the top of the page \author{ By Orion
-Miller\vspace{10pt} \\ CSC 300: Professional Responsibilities\vspace{10pt} \\
-Dr. Clark Turner\vspace{10pt} \\ }
+\title{\vfill Peek-a-Boo \\ \large Tor vs Iran}
+\author{ 
+  By Orion Miller\vspace{10pt} \\
+  CSC 300: Professional Responsibilities \vspace{10pt} \\
+  Dr. Clark Turner\vspace{10pt} \\
+}
 %\date{October 22, 2010} %Or use \today for today's Date
 \date{\today}
 
 \maketitle
 
 \vfill  %in combinaion with \newpage this forces the abstract to the bottom of
-\begin{abstract} DA DA DA\end{abstract}
+\begin{abstract} 
+  DA DA DA
+\end{abstract}
 
 \thispagestyle{empty} %remove page number from title page 
 
 \newpage
-
-
-%Create a table of contents with all headings of level 3 and above.
-%http://en.wikibooks.org/wiki/LaTeX/Document_Structure#Table_of_contents has
-%info on customizing the table of contents
 
 \thispagestyle{empty}  %Remove page number from TOC 
 
@@ -58,8 +59,8 @@ Dr. Clark Turner\vspace{10pt} \\ }
 \subsection{Iran's Presidential Election}
 
 In Iran, the sparks of political unrest began to fly in the summer of 2009.
-Friction started with the highly anticipated outcome the Iran's race for
-presidency. Elections took place on June 12th. To the surprise of many Mahmoud
+Friction started with the highly anticipated outcome of the Iran's race for
+presidency. Elections took place on June 12th. To the surprise of many, Mahmoud
 Ahmadinajad won with a lanslide victory of well above 60\% of the vote
 \cite{TheIranianVote, IranianElectionResultsByProvince}, making this
 Ahmadinjad's second term as the President of Iran.
@@ -67,15 +68,15 @@ Ahmadinjad's second term as the President of Iran.
 \subsection{The Response}
 
 Iranian citizens and many others were outraged with the results of the election.
-Laura Secor, from the New York, succinctly sumed up the voice of the people by
-stating \begin{quotation} There can be no question that June 12, 2009, Iranian
+Laura Secor, from the New Yorker, succinctly sumed up the voice of the people by
+stating \begin{quotation} there can be no question that on June 12, 2009, the Iranian
 presidential election was stolen. \cite{TheIranianVote}\end{quotation} Citizens
 swiftly began to vocalize their opinions.
 
 \subsection{Protests Begin}
 
-Protests began on June 13 and picked up force not only off-line but online as
-well. By the fifth day of protest hundreds of thousands of demonstrators took to
+Protests began on June 13 and picked up force not only offline but online as
+well. By the fifth day of protests, hundreds of thousands of demonstrators took to
 the streets of Tehran in opposition of the election's outcome
 \cite{IranProtestsFifthDayOfUnrest}. At the same time, ``the
 Twitterverse\footnote{Twitterverse is a name referring everything relating to
@@ -94,7 +95,7 @@ locations for demonstration a possibly threat to life.  One such location was
 the Interior Ministry\footnote{The Interior Ministry was the part of the
 government that tallied the votes of the election}. The government publicly
 announced that the police had orders to shoot anyone approaching the Interior
-Ministry \cite{TheIranianVote}. Online, the government to filter their internet
+Ministry \cite{TheIranianVote}. Online, the government filters their internet
 traffic and for periods of times block social networks like
 Twitter\footnote{Twitter is a microblogging service were anyone can read, write,
 and share messages, up to 140 characters long.\cite{WhatIsTwitter}}
@@ -234,11 +235,12 @@ Ethics.\cite{Tor:FAQ, Tor:Overview}
 
 \subsection{SE Code 3.03}
 
-\fbox{
-  \parbox{2.75in}{
-    3.03. Identify, define and address \textbf{ethical}, \textbf{economic},
-    (and) \textbf{cultural}, ... issues related to \textbf{work projects}. 
-}}\vspace{0.25in}
+\fbox{ 
+  \parbox{0.8\linewidth}{ 
+    3.03. ... Address \textbf{ethical}, \textbf{economic}, (and)
+    \textbf{cultural}, ... issues related to \textbf{work projects}.
+}}
+\newline
 
 To bring this ethical argument into domain of the Tor Project
 aiding Iranian dicicdents a few modifications to the code need to be made. The
@@ -249,38 +251,80 @@ the software). The \textbf{cultural} issues in this case is refering to
 \textbf{Iran's oppression of online dissidents}. The phrase \textbf{work projects} in
 this case referes to \textbf{Tor software}.
 
-The Tor software is a \textbf{work project} that has identified, defined, and
-addressed is to directly project directly concerned its software with the one of
-its hopes to provide, ``Journalists use Tor to communicate more safely with
-whistleblowers and dissidents.
-
-%ethical issues - freedom of expression
-%economic issues - cost of software
-%cultural issues - jail & death for freedom of expression
+%The Tor software is a \textbf{work project} that has identified, defined, and
+%addressed is to directly project directly concerned its software with the one of
+%its hopes to provide, ``Journalists use Tor to communicate more safely with
+%whistleblowers and dissidents.
 
 \subsubsection{Applying SE Code 3.03 to the Tor Project}
 
 \fbox{
-  \parbox{2.75in}{
-    3.03. Identify, define and address \textbf{freedom of expression},
-    \textbf{Tor's financial cost}, (and) \textbf{Iran's oppression of online
-    dissidents}, ... issues related to \textbf{Tor software}.  
-}}\vspace{0.25in}
+  \parbox{0.8\linewidth}{
+    3.03. ... Address \textbf{freedom of expression},
+    \textbf{Tor's financial cost}, (and) \textbf{Iran's oppression of dissidents},
+    ... issues related to \textbf{Tor software}.  
+}}
+\newline
 
-Our question now can be broken up into four parts. First, how does Tor software
-address freedom of expression in Iran? Second, how does Tor software address
-Tor's financial cost? Third, how does Tor software address Iran's oppression of
-online dissidents? Lastly is The Tor Project's Tor Software ethical under SE code
-3.03.
+Our question now can be broken up into four parts. First, does Tor software
+promote freedom of expression in Iran? Second, what is the financial cost for
+Tor users?  Third, does Tor software mitigate Iran's oppression of dissidents?
+Lastly, is Tor ethical under SE code 3.03.
+
+\subsubsection{The state of Freedom of Expression in Iran}
+Before we investigate wether Tor addresses freedom of expression in Iran we need
+to examine what the current sate of freedom of expression is in Iran. 
+
+\paragraph{Freedom of Expression Definition}
+For analysis of this paper freedom of expression will have 
+
+\paragraph{Universal Declaration of Human Rights}
+\newline
+
+It is important to note the Universal Decleration of Human Rights Article 19.
+It states 
+
+\begin{quotation}
+  Everyone has the right to freedom of opinion and expression; this right
+  include freedom to hold opinions without interference and to seek, receive and
+  impart information and ideas through any media and regardless of frontiers.
+\end{quotation}
+
+
+\paragraph{Iranian Government's Censorship}
+
+\subsubsection{Does Tor promote freedom of expression?}
+
+\paragraph{Tor's Ethos}
+
+\paragraph{Tor and Free Speech}
+
+\subsubsection{What is the financial cost of Tor?}
+
+\paragraph{Tor in Regards to Beer}
+
+\paragraph{Tor in Regards to Speech}
+
+\subsubsection{The State of Physical Oppression of Dissidents}
+
+\paragraph{Protesters Jailed}
+
+\paragraph{Bloggers Killed}
+
+\subsubsection{Does Tor software mitigate Iran's physical oppression of
+dissidents?}
+
+\subsubsection{Is Tor ethical under SE code 3.03?}
 
 
 \subsection{SE Code 1.07} 
 
 \fbox{
-  \parbox{2.75in}{
+  \parbox{0.8\linewidth}{
     1.07. Consider issues ...  and \textbf{other factors} that can
     \textbf{diminish access} to the \textbf{benefits} of \textbf{software}.
-}}\vspace{0.25in}
+}}
+\newline
 
 By the the Tor project releasing a patch on September 14 the same day that Iran
 added filters to block out Tor traffic in their firewall meant that they
@@ -291,23 +335,46 @@ To bring this ethical argument into the domain of the research question a few
 modifications to the code need to meade. The phrase \textbf{other factors} in
 this case is \textbf{Iran's firewall block of Tor}. The phrase \textbf{diminish
 access} in this case \textbf{prevents access}. The word \textbf{benefits} in
-this case is the \textbf{anonyimity network}. The word \textbf{software} in this
-case is \textbf{Tor software}.
+this case is the \textbf{uncensored Internet}. The word \textbf{software} in this
+case is \textbf{Tor}.
 
 \subsubsection{Applying SE Code 1.07 to the Tor Project}
 
 \fbox{ 
-  \parbox{2.75in}{ 
+  \parbox{0.8\linewidth}{ 
     1.07. Consider the issue of ... \textbf{Iran's firewall block of Tor} that 
-    \textbf{preventents access} to the \textbf{anonymity network} from 
-    \textbf{Tor software}.
-}}\vspace{0.25in}
+    \textbf{preventents access} to the \textbf{uncensored Internet} from 
+    \textbf{Tor}.
+}}
+\newline
 
-Our question now can be broken down into three parts. First, how did the Tor
-software circumvent the Iranian firewall? What would be the reprocussions of not
-having Tors anonymity network? Lastly was The Tor Project's Tor Software ethical
-under SE Code 1.07?
+Our question now can be broken down into three parts. First, how did Tor
+circumvent Iran's firewall? Second, how did the Tor software patch affect
+uncensored Internet access?  Lastly was Tor ethical under SE Code 1.07?
 
+\subsubsection{Iran's Firewall}
+
+\subsubsection{How did Tor circumvent Iran's firewall?}
+
+\paragraph{How Tor Works}
+
+\paragraph{Dousing the Firewall}
+
+\subsubsection{How did the Tor software patch affect uncensored Internet
+access?}
+
+\subsubsection{Lastly was Tor ethical under SE Code 1.07?}
+
+\subsubsection{Rawlsian Justice Principle Analysis}
+%%can another ethical system apply
+
+%%preamble ''public interest''
+%%the Rawlsian Justice principle gives us another means of critical analysis of
+%%what would the public interest be in this case
+
+\paragraph{Applying Rawlsian}
+
+%%citizens are the majority has the most to gain and government who has most power
 
 %%%%%%%%%%%%%%%%%%
 %%% Conclusion %%%
