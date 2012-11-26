@@ -7,7 +7,7 @@
 \usepackage{multicol}
 \usepackage{indentfirst}
 \usepackage[english]{babel}
-
+\usepackage[utf8x]{inputenc}
 \usepackage{setspace} 
 
 \usepackage{url}
@@ -255,6 +255,7 @@ Ethics.\cite{Tor:FAQ, Tor:Overview}
   \parbox{0.8\linewidth}{ 
     3.03. ... Address \textbf{ethical}, \textbf{economic}, (and)
     \textbf{cultural}, ... issues related to \textbf{work projects}.
+    \cite{SE:CodeOfEthics}
 }}
 \newline
 
@@ -279,6 +280,7 @@ this case referes to \textbf{Tor software}.
     3.03. ... Address \textbf{freedom of expression},
     \textbf{Tor's financial cost}, (and) \textbf{Iran's oppression of dissidents},
     ... issues related to \textbf{Tor software}.  
+    \cite{SE:CodeOfEthics}
 }}
 \newline
 
@@ -341,6 +343,9 @@ again)
 
 
 \paragraph{Iranian Government's Censorship}
+
+
+\subparagraph{Internet Police}
 
 %statistics on websites shutdown
 %considered how bad it is
@@ -447,22 +452,37 @@ Iran we need to examine what the current sate of physical oppression is.
 of protests in response to Iran's 2009 presidential elections because this
 appears origin of what is relevant to this paper.}
 
-\paragraph{Protests}
-
-
-\paragraph{Jailings}
+\paragraph{Jail}
 
 %number total protesters jailed
 %places off limits for protesting
 
-\paragraph{Killings}
-Possibly most frighteningly 
+\paragraph{Death}
+
+``Why is it that in our country political prisoners go to jail vertically but return
+horizontally?'', Iranian MP, Ahmed Bakhshayes, asked the Iranian Parliament on
+November 14, 2012.\cite{IranBloggersDeath} The Iranian government has been
+responding to political dissidence in a fair amount of situations  putting
+dissidents to death. For the past 10 years at least 18 people have died in while
+imprisoned by the Iranian government, including the Iranian-Canadian
+photographer Zahra Kazemi, student activist Amir Javadifar and journalist Hoda
+Saber and most recently a 35 year old blogger Sattar Beheshti.
+\cite{IranBloggersDeath}
 
 %specific blogger killed
 %addressed other bloggers jailed and killed
 
 \subsubsection{Does Tor software mitigate Iran's physical oppression of
 dissidents?}
+
+Let us call a spade a spade, Tor is not a `silver bullet' for the physical
+oppression going on in Iran. It however does have privacy by design. This does
+make it much more challenging for the Iranian government to censor and monitor
+Iranian dissidents. By Tor giving the empowering Iranian dissidents to
+communicate in privacy and possibly journalize the events and their opinions of
+Iranian current events, it prevents the Iranian government corelate the
+vocalized opinions it disagrees with and whom are saying thim. In this veil of
+secrecy is what indirectly helps Iranian dissidents from physical oppression.
 
 % talk about tor hiding anonymity
 % doesn't protect end-to-end
@@ -478,14 +498,14 @@ dissidents?}
 \fbox{
   \parbox{0.8\linewidth}{
     1.07. Consider issues ...  and \textbf{other factors} that can
-    \textbf{diminish access} to the \textbf{benefits} of \textbf{software}.
+    \textbf{diminish access} to the \textbf{benefits} of \textbf{software}. 
+    \cite{SE:CodeOfEthics}
 }}
 \newline
 
 By the the Tor project releasing a patch on September 14 the same day that Iran
 added filters to block out Tor traffic in their firewall meant that they
-considered that the factors of the Iranian government where diminishing access
-to the benefits of their software.
+that the Tor Project was directly responding to the current events of Iran.
 
 To bring this ethical argument into the domain of the research question a few
 modifications to the code need to meade. The phrase \textbf{other factors} in
@@ -501,6 +521,7 @@ case is \textbf{Tor}.
     1.07. Consider the issue of ... \textbf{Iran's firewall block of Tor} that 
     \textbf{preventents access} to the \textbf{uncensored Internet} from 
     \textbf{Tor}.
+    \cite{SE:CodeOfEthics}
 }}
 \newline
 
@@ -509,12 +530,72 @@ circumvent Iran's firewall? Second, how did the Tor software patch affect
 uncensored Internet access?  Lastly was Tor ethical under SE Code 1.07?
 
 \subsubsection{Iran's Firewall}
+Before we investigate how Tor bypasses Iran's firewall or the considerations and
+effects of the Tor patch we need to examine how Iran's firewall works.
+
+\paragraph{Internet Service}
+
+All of the Internet service in Iran is controlled by Data Communications of Iran
+(DCI).\cite{FindingWayAroundIranianCensorship} In addition to DCI's monopoly on
+Iran's internet it is mainly owned by the Iranian
+government.\cite{FindingWayAroundIranianCensorship, DCI:Articles} With the
+current setup this gives DCI and subsiquently the Iranian government the ability
+to throttle the total amount of data that enters and leaves the country,
+specifying what websites are accessable by defining filter rules on their
+routers, and to turn off the Internet all
+together.\cite{FindingWayAroundIranianCensorship}
+
+\paragraph{Censorship} 
+
+It is one thing for the Iranian government to ability to control over the Iran's
+Internet but does it act on their power and actually censor and monitor DCI's
+Internet users? In 2009 DCI for a brief period took down the entire Internet for
+Iran. \cite{FindingWayAroundIranianCensorship} Specific websites such a
+Facebook, Youtube, Twitter, and Google have been blocked from access.
+\cite{FindingWayAroundIranianCensorship, IransElectronicCurtain} The blocking of
+these sites does not just block what Iran's government may consider illegitimate
+use of such websites, it  blocks legitimate use of these sites by Iranians and
+those whom they may be trying to communicate with with these sites under Iran's
+ethical framework. The Iranian government also took measures to filter SSL
+traffic and specifically the Tor network.  \cite{Tor:IranPartiallyBlocksSSL,
+IranBlocksTorSameDayFix} Blocking SSL traffic may appear just a means for the
+government to filter and monitor Internet traffic but it has larger
+implications. SSL traffic is fundemental and similar technologies is fundmental
+for Internet users to protect themselves from malicious people from gathering
+sensative information like passwords, banking informations, and meidical
+information. Given the Iranian's power over DCI and there past and current
+actions they have taken to exercise that power demonstrates that they want to
+control the information and communications of its people and especially Iranian
+dissidents.
+
+\paragraph{Monitorship}
+
+%Iran's Firewall could be considered not to be just passive access controls on
+%the Internet but active response to what is being posted and discussed on the
+%Internet. Iran's Internet Police, FATA....
+
+%current setup ability to censor and monitor, internet police that monitors
+%internet uses and, case examples of censoring communications, SSL traffic,
+%faceboook, youtube, and this paper - tor
 
 \subsubsection{How did Tor circumvent Iran's firewall?}
+
+Now that we have an understanding how 
 
 \paragraph{How Tor Works}
 
 \paragraph{Dousing the Firewall}
+
+
+
+\subsubsection{Did \textit{The Tor Project} consider the release of the Tor
+patch?}
+
+\paragraph{Quality Assurance}
+
+\paragraph{The Patch}
+
+\paragraph{Consideration}
 
 \subsubsection{How did the Tor software patch affect uncensored Internet
 access?}
