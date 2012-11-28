@@ -490,7 +490,7 @@ secrecy is what indirectly helps Iranian dissidents from physical oppression.
 % talk about how it does make it more challenging for traffic analaysis
 % no node can know about other nodes
 
-\subsubsection{Is Tor ethical under SE code 3.03?}
+\subsubsection{Was Tor ethical under SE code 3.03?}
 
 
 \subsection{SE Code 1.07} 
@@ -622,42 +622,83 @@ the scope of the Tor protocol but could be coordinated between Bill and Alice.
 
 Continuing from the analogy above, we can analyze how Bill (i.e an Iranian
 dissident) could use this technique to subvert the access controls specified by
-the Iranan firewall. So 
-
-With an rudementary knowledge of how Tor works we can bring the analogy into the
-domain of this case and apply its concepts. 
-
-Iranian dicidents being able to use Tor to connect to the Tor network would
-connect 
-
-
+the Iranan firewall. Iranian dicidents being able to use Tor to connect to the
+Tor network would connect other Tor nodes and set up a path. Tor could be
+specified to make sur the last node in the path, the exit node, is outside Iran.
+\cite{Tor:SpecificExitNode, Tor:FAQ} The data being sent across the designated
+path would reach its end address (e.g.  Twitter, Facebook) and Iran's firewall
+would not be able to censor or monitor that data. The Iranian government
+wouldn't be able to censor what websites the Iranian dissident wants to access
+since the firewall doesn't know the end address. The Iranian government wouldn't
+be able to monitor Iranian dissidents traffic since all along the path in Iran
+since the data is encrypted.  However Iran could and has blocked Tor traffic
+itself.
 
 \subsubsection{Did The Tor Project consider the release of the Tor patch?} 
 
 At this point we can examine the consideration The Tor Project's made for the
-release of Tor 0.2.2.33 and 0.2.3.4-alpha.\footnote{There was little data that
-  could found on the Tor Project's consideration for that specific update.}
-To do this we shall look at the technical and social issues that could have
-impacted the decision process of releasing the patch.
+release of Tor 0.2.2.33 and 0.2.3.4-alpha. There was virtually no data found on
+the on a consideration to release this specific patch. The next best thing we
+can do is to infer a consideration of this patch by looking at information that
+plausibly would factor into the consideration of releasing this software. To do
+this we shall look at the technical and social topics surrounding this release
+that could have impacted the decision process of release.
 
 \paragraph{Quality Assurance}
-%how old the project is
-%res
+
+The Tor Project takes Tor and the Tor network very seriously and critically.
+They openly admit that their software is not perfect by any means. Despite this
+there has been considerable amounts of academic and government research on
+anonymity networks and revision of the Tor project. \cite{Tor:ResearchPapers}
+Tor's source code and design documents are fully open to the public to review
+and scrutinize, they even ask on The Tor Project's 'Research Ideas' web-page
+that, ``we need people to attack the system, quantify defenses, etc.''
+\cite{Tor:ResearchIdeas, Tor:2011} Since open source code and design documents
+might not be enough  they provide a growing repository of tools to take metrics
+and attack the Tor network. \cite{Tor:ResearchHome} ``DEFINE SECURE SOFTWARE''.
+It appears that The Tor Project does its best to meet this definition of
+security for their users.  
+
+\paragraph{Tor Is Blocked}
+
+The Iranian government September 14th, 2011 added a filter to their 'firewall'
+that blocked Tor traffic. They were able to do this by checking Tor's expiration
+time of SSL session certificates. This was possible because at the Time Tor's
+SSL session certificates were set to expire after 2 hours where normal SSL
+certificats would usually last a year or more. For a short period of time this
+effectively blocked Iranian dicidents who used Tor from receiving its benefits
+of an uncensored Internet. \cite{IranBlocksTorSameDayFix}
 
 \paragraph{The Patch} 
 
-Now we should 
+The Tor Project was able to fix this within the same day by changing the
+certificates to have a, ``larger expiration time ..., so our certs have more
+plausible expiry times.'' \cite{IranBlocksTorSameDayFix} There appeared to be
+nothing written about considering technical and social issues specifically
+related to the release of Tor 0.2.2.33 and 0.2.3.4-alpha.  However it was
+implied in the blog post \textit{Iran blocks Tor; Tor releases same-day fix} by
+phobos that the patch was a simple fix. \cite{IranBlocksTorSameDayFix} From this
+it would be fair to assume that change in the software did not drastically
+change the robustness of the software from the prior version and therefore did
+not put any users in any new danger.
 
 \paragraph{The Censorship Arms Race}
 
-\paragraph{Social Impact}
+How did the filter work technically? Tor tries to make its traffic look like a
+web browser talking to an https web server, but if you look carefully enough you
+can tell some differences. In this case, the characteristic of Tor's SSL
+handshake they looked at was the expiry time for our SSL session certificates:
+we rotate the session certificates every two hours, whereas normal SSL
+certificates you get from a certificate authority typically last a year or more.
+The fix was to simply write a larger expiration time on the certificates, so our
+certs have more plausible expiry times.
 
 \paragraph{Consideration}
 
 %\subsubsection{How did the Tor software patch affect uncensored Internet
 %access?}
 
-\subsubsection{Lastly was Tor ethical under SE Code 1.07?}
+\subsubsection{Was Tor ethical under SE Code 1.07?}
 
 \section{Rawlsian Justice Principle Analysis}
 %%can another ethical system apply
