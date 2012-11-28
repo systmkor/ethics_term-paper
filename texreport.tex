@@ -9,8 +9,11 @@
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{setspace} 
-
+\usepackage{verbatim}
 \usepackage{url}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{breakurl}
 
 %%% PAGE DIMENSIONS
 \usepackage{geometry} % to change the page dimensions 
@@ -644,7 +647,7 @@ plausibly would factor into the consideration of releasing this software. To do
 this we shall look at the technical and social topics surrounding this release
 that could have impacted the decision process of release.
 
-\paragraph{Quality Assurance}
+\paragraph{Quality}
 
 The Tor Project takes Tor and the Tor network very seriously and critically.
 They openly admit that their software is not perfect by any means. Despite this
@@ -684,16 +687,11 @@ not put any users in any new danger.
 
 \paragraph{The Censorship Arms Race}
 
-How did the filter work technically? Tor tries to make its traffic look like a
-web browser talking to an https web server, but if you look carefully enough you
-can tell some differences. In this case, the characteristic of Tor's SSL
-handshake they looked at was the expiry time for our SSL session certificates:
-we rotate the session certificates every two hours, whereas normal SSL
-certificates you get from a certificate authority typically last a year or more.
-The fix was to simply write a larger expiration time on the certificates, so our
-certs have more plausible expiry times.
+
 
 \paragraph{Consideration}
+
+
 
 %\subsubsection{How did the Tor software patch affect uncensored Internet
 %access?}
@@ -720,13 +718,41 @@ certs have more plausible expiry times.
 %%%%%%%%%%%%%%%%%%
 %%% Conclusion %%%
 %%%%%%%%%%%%%%%%%%
-\section{Conclusion} The conclusion is a summary of your entire anal- ysis. It
-should reiterate the answer your audience has been forming while reading your
-analysis. New information should never be introduced in your conclusion.
-\cite{texTemp}
+\section{Conclusion} 
+
 
 %end the two column format
 \end{multicols} \newpage
+
+\appendix
+
+\section{Tor's License}
+\label{Tor:License}
+\verbatiminput{appendix/TOR-LICENSE.txt}
+
+\section{The Tor Project's Mission Statement}
+\label{Tor:MissionStatement}
+
+\verbatiminput{appendix/mission-statement.txt}
+
+\section{Basics of How Tor Works}
+\label{Tor:HowTorWorks}
+
+\begin{center}
+\includegraphics[natwidth=510bp,natheight=326bp,width= 0.7\linewidth]{appendix/htw1.png}
+\end{center}
+\verbatiminput{appendix/htw1.txt}
+
+\begin{center}
+\includegraphics[natwidth=510bp,natheight=326bp,width= 0.7\linewidth]{appendix/htw2.png}
+\end{center}
+\verbatiminput{appendix/htw2.txt}
+
+\begin{center}
+\includegraphics[natwidth=510bp,natheight=326bp,width= 0.7\linewidth]{appendix/htw3.png}
+\end{center}
+
+\newpage
 
 %cite all the references from the bibtex you haven't explicitly cited
 \nocite{*}

@@ -1,0 +1,10 @@
+Once a circuit has been established, many kinds of data can be exchanged and
+several different sorts of software applications can be deployed over the Tor
+network. Because each relay sees no more than one hop in the circuit, neither an
+eavesdropper nor a compromised relay can use traffic analysis to link the
+connection's source and destination. Tor only works for TCP streams and can be
+used by any application with SOCKS support.
+
+For efficiency, the Tor software uses the same circuit for connections that
+happen within the same ten minutes or so. Later requests are given a new
+circuit, to keep people from linking your earlier actions to the new ones. 
