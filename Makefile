@@ -35,6 +35,9 @@ ps: $(NAME).ps
 
 pdf: $(NAME).pdf
 
+wordcount: $(TEXFILES)
+	@./scripts/texcount.pl $(TEXFILES)
+
 %.ps: %.dvi
 	$(PS) $(PSFLAGS) $(NAME).dvi > $(NAME).ps
 
