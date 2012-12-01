@@ -38,6 +38,12 @@ pdf: $(NAME).pdf
 wordcount: $(TEXFILES)
 	@./scripts/texcount.pl $(TEXFILES)
 
+smallprint: $(NAME).pdf
+	lpr -P Deskjet_F4200 -o page-ranges=1-12 $(NAME).pdf
+
+print: $(NAME).pdf
+	lpr -P Deskjet_F4200 $(NAME).pdf
+
 %.ps: %.dvi
 	$(PS) $(PSFLAGS) $(NAME).dvi > $(NAME).ps
 
