@@ -269,10 +269,19 @@ Engineering Code of Ethics.\cite{Tor:FAQ, Tor:Overview}
 
 \subsection{SE Code 1.07} 
 
-By the the Tor project releasing a patch on September 14, the same day that Iran
-added filters to block out Tor traffic in their firewall, meant that The Tor
-Project was directly responding to the current events of Iran.
-
+To begin our analysis we should examine what sort of considerations were made by
+The Tor Project surrounding the release of the patch of Tor on September 14, the
+same day that Iran added filters to block out Tor traffic in their firewall. It
+is important to examine there consideration because within The Tor Project's
+blog post titled \textit{Iran blocks Tor; Tor releases same-day fix} it states,
+``once enough relays and bridges upgrade, the many tens of thousands of Tor
+users in Iran will resume being able to reach the Tor network, without needing
+to change their software.''\cite{Tor:SameDayFix} This means that The Tor Project
+were directly responding to Iran's current affairs and acknowledging that it
+would impact users in Iran. The tenent of the SE code that would best allow us
+to examine a consideration the release of the Tor patch would be tenent 1.07. It
+states
+\newline
 \fbox{
   \parbox{0.8\linewidth}{
     1.07. Consider issues ...  and \textbf{other factors} that can
@@ -280,7 +289,6 @@ Project was directly responding to the current events of Iran.
     \cite{SE:CodeOfEthics}
 }}
 \newline
-
 To bring this ethical argument into the domain of the research question a few
 modifications to the code need to made. The phrase \textbf{other factors} in
 this case is \textbf{Iran's firewall block of Tor}. The phrase \textbf{diminish
@@ -290,6 +298,9 @@ this case is \textbf{Tor}.
 
 \subsubsection{Applying SE Code 1.07 to the Tor Project}
 
+Now that we have taken SE Code 1.07 and brought it into the domain of the
+research questions we can construct the modifified SE Code.
+\newline
 \fbox{ 
   \parbox{0.8\linewidth}{ 
     1.07. Consider the issue of ... \textbf{Iran's firewall block of Tor} that 
@@ -298,10 +309,10 @@ this case is \textbf{Tor}.
     \cite{SE:CodeOfEthics}
 }}
 \newline
-
-Our question now can be broken down into three parts. First, how did Tor
-circumvent Iran's firewall? Second, how did the Tor software patch affect
-uncensored Internet access?  Lastly, was Tor ethical under SE Code 1.07?
+For us to effectively analyze the domain of research question using our modified
+SE Code we need construct specific questions as points of analysis. First, how
+did Tor circumvent Iran's firewall?  Second, how did the Tor software patch
+affect uncensored Internet access?  Lastly, was Tor ethical under SE Code 1.07?
 
 \subsubsection{Iran's Firewall}
 Before we investigate how Tor bypasses Iran's firewall or the considerations and
@@ -310,9 +321,9 @@ effects of the Tor patch we need to examine how Iran's firewall works.
 \paragraph{Internet Service}
 
 All of the Internet service in Iran is controlled by Data Communications of Iran
-(DCI). \cite{FindingWayAroundIranianCensorship} In addition to DCI's monopoly on
-Iran's Internet, it is mainly owned by the Iranian government.
-\cite{FindingWayAroundIranianCensorship, DCI:Articles} This gives DCI and the
+(DCI).\cite{FindingWayAroundIranianCensorship} In addition to DCI's monopoly on
+Iran's Internet, it is mainly owned by the Iranian government.\cite{
+FindingWayAroundIranianCensorship, DCI:Articles} This gives DCI and the
 Iranian government, the ability to throttle the total amount of data that enters
 and leaves the country, specify what websites are accessable by defining filter
 rules on their routers, and the ability to turn off the Internet all together.
@@ -323,14 +334,14 @@ rules on their routers, and the ability to turn off the Internet all together.
 It is one thing for the Iranian government have control over Iran's
 Internet, but is it on within their power to actually censor and monitor DCI's
 Internet users? In 2009 DCI, for a brief period took down the entire Internet in 
-Iran. \cite{FindingWayAroundIranianCensorship} Specific websites such a
-Facebook, Youtube, Twitter, and Google had been blocked from access.
-\cite{FindingWayAroundIranianCensorship, IransElectronicCurtain} The blocking of
+Iran.\cite{FindingWayAroundIranianCensorship} Specific websites such a
+Facebook, Youtube, Twitter, and Google had been blocked from access.\cite{
+FindingWayAroundIranianCensorship, IransElectronicCurtain} The blocking of
 these sites does not just block what Iran's government may consider illegitimate
 use of such websites, it  blocks legitimate use of these sites by Iranians and
 for those whom they may be trying to communicate with using these sites under
 Iran's ethical framework. The Iranian government also took measures to filter
-SSL traffic and specifically the Tor network.  \cite{Tor:IranPartiallyBlocksSSL,
+SSL traffic and specifically the Tor network.\cite{Tor:IranPartiallyBlocksSSL,
 IranBlocksTorSameDayFix} Blocking SSL traffic may appear just a means for the
 government to filter and monitor Internet traffic but it has larger
 implications. Encrypting network traffic is fundmental for Internet users to
@@ -388,8 +399,8 @@ Continuing from the analogy above, we can analyze how Bill (i.e an Iranian
 dissident) could use this technique to subvert the access controls specified by
 the Iranan firewall. Iranian dicidents being able to use Tor to connect to the
 Tor network would connect other Tor nodes and set up a path. Tor could be
-specified to make sur the last node in the path, the exit node, is outside Iran.
-\cite{Tor:SpecificExitNode, Tor:FAQ} The data being sent across the designated
+specified to make sur the last node in the path, the exit node, is outside Iran.\cite{
+Tor:SpecificExitNode, Tor:FAQ} The data being sent across the designated
 path would reach its end address (e.g.  Twitter, Facebook) and Iran's firewall
 would not be able to censor or monitor that data. The Iranian government
 wouldn't be able to censor what websites the Iranian dissident wants to access
@@ -413,37 +424,37 @@ that could have impacted the decision process of release.
 The Tor Project takes Tor and the Tor network very seriously and critically.
 They openly admit that their software is not perfect by any means. Despite this,
 there have been considerable amounts of academic and government research on
-anonymity networks and revision of the Tor project. \cite{Tor:ResearchPapers}
+anonymity networks and revision of the Tor project.\cite{Tor:ResearchPapers}
 Tor's source code and design documents are fully open to the public to review
-and scrutinize, it is event stated on The Tor Project's `Research Ideas' web-page
-that, ``we need people to attack the system, quantify defenses, etc.''
-\cite{Tor:ResearchIdeas, Tor:2011} Since open source code and design documents
+and scrumeant tinize, it is event stated on The Tor Project's `Research Ideas'
+web-page that, ``we need people to attack the system, quantify defenses, etc.''\cite{
+Tor:ResearchIdeas, Tor:2011} Since open source code and design documents
 might not be enough  they provide a growing repository of tools to take metrics
-and attack the Tor network. \cite{Tor:ResearchHome} ``DEFINE SECURE SOFTWARE''.
+and attack the Tor network.\cite{Tor:ResearchHome}
 It appears that The Tor Project does its best to meet this definition of
 security for their users.  
 
 \paragraph{Tor Is Blocked}
 
-On September 14th, 2011 the Iranian government added a filter to their `firewall'
+On September 14th, 2011 the Iranian government added a filter to their firewall
 that blocked Tor traffic. They were able to do this by checking Tor's expiration
-time of SSL \footnote{SSL (Secure Socket Layer) - Is a cryptographic protocol to
-hide inormation.} session certificates \footnote{session certificate - is a
-means of authenticating an SSL connection.} . This was possible because at the
+time of SSL\footnote{SSL (Secure Socket Layer) - Is a cryptographic protocol to
+hide inormation.} session certificates\footnote{Session certificate is a
+means of authenticating an SSL connection.}. This was possible because at the
 time, Tor's SSL session certificates were set to expire after two hours where normal SSL
 certificats would usually last a year or longer. For a short period of time this
 effectively blocked Iranian dicidents who used Tor from receiving its benefits
-of an uncensored Internet. \cite{IranBlocksTorSameDayFix}
+of an uncensored Internet.\cite{IranBlocksTorSameDayFix}
 
 \paragraph{The Patch} 
 
 The Tor Project was able to fix this within the same day by changing the
 certificates to have a, ``larger expiration time ..., so our certs have more
-plausible expiry times.'' \cite{IranBlocksTorSameDayFix} \footnote{There appeared to be
+plausible expiry times.''\cite{IranBlocksTorSameDayFix} \footnote{There appeared to be
 nothing written about considering technical and social issues specifically
 related to the release of Tor 0.2.2.33 and 0.2.3.4-alpha.}  However it was
 implied in the blog post \textit{Iran blocks Tor; Tor releases same-day fix}
-that the patch was a simple fix. \cite{IranBlocksTorSameDayFix} From this it
+that the patch was a simple fix.\cite{IranBlocksTorSameDayFix} From this it
 would be fair to assume that this change in the software did not drastically
 change the robustness of the software from the prior version and therefore did
 not put any users in any new danger.
@@ -471,32 +482,28 @@ In regards to the social issues possibly preventing the release of the patch,
 The Tor Project felt that Iranian dissidents would be better off with the
 release of the patch.
 
+\subsubsection{Was Tor ethical under SE Code 1.07?} 
 
-%\subsubsection{How did the Tor software patch affect uncensored Internet
-%access?}
-
-\subsubsection{Was Tor ethical under SE Code 1.07?}
-
-%\section{Rawlsian Justice Principle Analysis}
-%%can another ethical system apply
-
-%%preamble ''public interest''
-%%the Rawlsian Justice principle gives us another means of critical analysis of
-%%what would the public interest be in this case
-
-%\subsection{Applying Rawlsian}
-
-%%citizens are the majority has the most to gain and government who has most power
-%%dissimination of knowledge
-%% allows them to question the ethical framwework that Iran Govt. tries to
-%%   impose
-%% 
-%% freedom of press statistics
-%% happiness & freedom of press statistics
-
+As we examined the research questions under our domain specific SE Code tenet
+1.07 we focused on two questions, ``how did Tor circumvent Iran's firewall?''
+and ``how did the Tor software patch affect uncensored Internet access?'' to
+determine wether Tor was ethical. In regards to our first question Tor
+circumvented Iran's oppressive censoring by a passive means. Tor didn't actively
+destroy any equipment or software, Iranian dissident users actively choose to
+use it and Tor enabled them to bypass the firewall. In regards to our second
+question we infered that The Tor Project considered the release of Tor because
+it acknwledged, considered, and felt that the release of the Tor bettered the
+social issues in Iran and did not risck any technical issues. Given all of this
+The Tor Project was ethical under SE Code 1.07.
 
 \subsection{SE Code 3.03}
 
+Now that we have determined that The Tor Project was ethical under SE Code 1.07
+in considering the release upgrade of Tor we should examine to see if Tor
+addresses issues in Iran relevent to its purpose of existing. The tenent of the
+SE code that would best allow us to examine if Tor addresses issues that
+surround its use would be tenent 3.03.  It states
+\newline
 \fbox{ 
   \parbox{0.8\linewidth}{ 
     3.03. ... Address \textbf{ethical}, \textbf{economic}, (and)
@@ -504,7 +511,6 @@ release of the patch.
     \cite{SE:CodeOfEthics}
 }}
 \newline
-
 To bring this ethical argument into the domain of The Tor Project aiding Iranian
 dicicdents, a few modifications to the code need to be made. The
 \textbf{ethical} issue in this case is the issue of \textbf{freedom of
@@ -514,13 +520,12 @@ the software). The \textbf{cultural} issues in this case is refering to
 \textbf{Iran's oppression of online dissidents}. The phrase \textbf{work
 projects} in this case referes to \textbf{Tor software}.
 
-%The Tor software is a \textbf{work project} that has identified, defined, and
-%addressed is to directly project directly concerned its software with the one of
-%its hopes to provide, ``Journalists use Tor to communicate more safely with
-%whistleblowers and dissidents.
+\subsubsection{Applying SE Code 3.03 to The Tor Project}
 
-\subsubsection{Applying SE Code 3.03 to the Tor Project}
+Now that we have taken SE Code 1.07 and brought it into the domain of the
+research questions we can construct the modifified SE Code.
 
+\begin{center}
 \fbox{
   \parbox{0.8\linewidth}{
     3.03. ... Address \textbf{freedom of expression},
@@ -528,14 +533,17 @@ projects} in this case referes to \textbf{Tor software}.
     ... issues related to \textbf{Tor software}.  
     \cite{SE:CodeOfEthics}
 }}
+\end{center}
 \newline
 
-Our question now can be broken up into four parts. First, does Tor software
-promote freedom of expression in Iran? Second, what is the financial cost for
-Tor users?  Third, does Tor software mitigate Iran's oppression of dissidents?
-Lastly, is Tor ethical under SE code 3.03.
+For us to effectively analyze the domain of research question using our modified
+SE Code we need examine specific topics as as points of analysis.  First, what
+is the state of freedom of expression in Iran? Second, does Tor software
+promote freedom of expression in Iran? Third, what is the financial cost for
+Tor users?  Fourth, does Tor software mitigate Iran's oppression of dissidents?
+Lastly, is Tor ethical under SE code 3.03?
 
-\subsubsection{The state of Freedom of Expression in Iran}
+\subsubsection{What is the state of Freedom of Expression in Iran?}
 Before we investigate wether Tor addresses freedom of expression in Iran we need
 to examine what the current sate of freedom of expression is in Iran. 
 
@@ -545,34 +553,31 @@ For analysis of this paper we will need define `freedom of expression' somewhat
 broadly. It will be synonymsous with freedom of expression, speech, opinion, and
 press.  This needs to be the case because of the nature that the Internet,
 social networks and blogs have played in this case. The foundation of this
-redefintion of `freedom of expression' stems from 
+redefintion of `freedom of expression' will be used from a paper titled `The
+Complex Road to Happiness' which correlates the freedom of press with and
+happiness index of countries, its definition of free press is 
 \begin{quotation} 
-  A free press is defined not only by the media's freedom to say what they want
-  but also by media consumers' freedom to get the information they need.
-  \cite{PublicAttitudeTowardFreedomPress, ComplexRoadToHappiness}
+  ``A free press is defined not only by the media's freedom to say what they want
+  but also by media consumers' freedom to get the information they need.''\cite{
+  PublicAttitudeTowardFreedomPress, ComplexRoadToHappiness}
 \end{quotation}
-
 In addition, we need note that the terms `media' and `media consumers' from the
 quote above in our case need to include the people who post content and read
 content from blogs, Twitter, social networks, and other forms of communication
 online since the importance of these forms of medium have played in Iran but in
-addition to that for example Twitter has been shown to show accurate news
-events.  \cite{Twitter:BreakingNewsDetection, Twitter:IdentificationLiveEvents,
-Twitter:MeasuringInfluence}
-
+addition to that for example Twitter with applied algorithms has been to show
+accurate news events.  \cite{Twitter:BreakingNewsDetection,
+Twitter:IdentificationLiveEvents, Twitter:MeasuringInfluence}
 
 \paragraph{Universal Declaration of Human Rights}
 
 We should examine Iran's relationship to the United Nations to temper our
 analysis of their actions in how they censor their citizens. 
 
-(!!!!!how it applies to under 3.03 code entry and how it is means to guide goals
-of the state.)
-
 Iran is and has been a member of the United Nations since 1945.
 \cite{UN:IranBecameMember, UN:IranActiveMember} Under the United Nations `The
-Universal Declaration of Human Rights' it states that ``Member States
-\footnote{Member States are countries that are members of the United Nations}
+Universal Declaration of Human Rights', it states that ``Member States\footnote{Member 
+States are countries that are members of the United Nations}
 have pledged themselves to achieve, in co-operation with the United Nations, the
 promotion of universal respect for and observance of human rights and
 fundamental freedoms.''\cite{UniversalDeclerationOfHumanRights}. It appears
@@ -580,29 +585,22 @@ that, under this pledge Member States should strive to uphold `The Universal
 Declaration of Human Rights' preamble and articles. Article 19 states
 
 \begin{quotation} 
-  Everyone has the right to freedom of opinion and expression;
+  ``Everyone has the right to freedom of opinion and expression;
   this right include freedom to hold opinions without interference and to seek,
   receive and impart information and ideas through any media and regardless of
-  frontiers.  \cite{UniversalDeclerationOfHumanRights}
+  frontiers.''\cite{UniversalDeclerationOfHumanRights}
 \end{quotation}
 
-(put in mutual knowledge form Steve Pinker and possibly the mission statement
-again - it should be clear that the Tor project is trying to ensure this to all
-Iranian users and that the Iranian government appears to be trying to prevent
-freedom of speech)
 
 
 \paragraph{Iranian Government's Censorship}
 
-
-\subparagraph{Internet Police}
-
+%internet police
+%monitorship
 %statistics on websites shutdown
 %considered how bad it is
 %reasons they claim they shutdown
 %reasons why other people believe it is being shut down
-
-\paragraph{Monitorship}
 
 %Iran's Firewall could be considered not to be just passive access controls on
 %the Internet but active response to what is being posted and discussed on the
@@ -626,12 +624,10 @@ Appendix \ref{Tor:MissionStatement} or more succintcly from their website
 stating that,
 
 
-\begin{quotation} 
-  
+\begin{quotation}  
   ``The Tor project is based on the belief that anonymity is not just a good
   idea some of the time — it is a requirement for a free and functioning
   society.''\cite{Tor:Users}
-
 \end{quotation}
 
 
@@ -650,7 +646,8 @@ for
   experience freedom of access and expression on the Internet while keeping them
   in control of their privacy and anonymity. Its network has proved pivotal in
   dissident movements in both Iran and more recently
-Egypt.\cite{FreeSoftwareAwards} \end{quotation}
+  Egypt.\cite{FreeSoftwareAwards} 
+\end{quotation}
 
 The Electronic Frontier Foundation (EFF) has taken it upon themselves to
 endorse Tor. Under an EFF article titled `Surveillance Self-Defense' lists Tor
@@ -695,7 +692,7 @@ Tor with a pricetag alleviated maximizes the number of dissidents using Tor.
 
 Tor is `open source', which means anyone can ``[redistribute] and use in source
 and binary forms, with or without modification, [is] permitted provided that''
-Tor's 3-clause BSD license conditions are met. \footnote{Tor's full license can
+Tor's 3-clause BSD license conditions are met.\footnote{Tor's full license can
 be found in Appendix \ref{Tor:License}} \cite{BSD:3-ClauseLicense,
 TOR:Download, TOR:BSD-License} 
 
@@ -711,10 +708,10 @@ censorship tools or modifications to the Internet within Iran they would have a
 code base to operate from to modify the code to their local issue.  Indirectly,
 Tor being `open source' makes it financially beneficial to Iranian dissidents.
 
-\subsubsection{The State of Physical Oppression of Dissidents}
+\subsubsection{What is the State of Physical Oppression of Dissidents?}
 Before we investigate wether Tor addresses physical oppression of dissidents in
-Iran, we need to examine what the current sate of physical oppression is.
-\footnote{We will begin examining Iran's state of oppression with the beginning
+Iran, we need to examine what the current sate of physical oppression
+is.\footnote{We will begin examining Iran's state of oppression with the beginning
 of protests in response to Iran's 2009 presidential elections because this
 appears origin of what is relevant to this paper.}
 
@@ -774,17 +771,11 @@ firewall when the government explicitely filtered Tor traffic starting September
 
 \appendix
 
-\section{Tor's License}
-\label{Tor:License}
-\verbatiminput{appendix/TOR-LICENSE.txt}
-
-\section{The Tor Project's Mission Statement}
-\label{Tor:MissionStatement}
-
-\verbatiminput{appendix/mission-statement.txt}
 
 \section{Basics of How Tor Works}
 \label{Tor:HowTorWorks}
+
+This was an excerpt from Tor's \textit{Overview} web-page.\cite{Tor:Overview}
 
 \begin{center}
 \includegraphics[natwidth=510bp,natheight=326bp,width= 0.7\linewidth]{appendix/htw1.png}
@@ -799,6 +790,20 @@ firewall when the government explicitely filtered Tor traffic starting September
 \begin{center}
 \includegraphics[natwidth=510bp,natheight=326bp,width= 0.7\linewidth]{appendix/htw3.png}
 \end{center}
+
+\section{The Tor Project's Mission Statement}
+\label{Tor:MissionStatement}
+
+This is The Tor Project's mission statement from their \textit{Sponsorsship}
+web-page.\cite{TOR:Sponsorship}
+
+\verbatiminput{appendix/mission-statement.txt}
+
+\section{Tor's License}
+This is the software license for Tor.\cite{TOR:BSD-License}
+\label{Tor:License}
+\verbatiminput{appendix/TOR-LICENSE.txt}
+
 
 \newpage
 
