@@ -19,7 +19,11 @@
 \usepackage{geometry} % to change the page dimensions 
 \geometry{letterpaper}
 
+
+%\addtocontents{toc}{\protect\thispagestyle{empty}}
+
 \begin{document}
+
 
 \title{\vfill Peek-a-Boo \\ \large Tor vs Iran}
 \author{ 
@@ -36,7 +40,7 @@
 \begin{abstract} 
 
 On September 14, 2011 the Iranian government added a filter rule to their
-firewall and blocked Tor, a Internet anonymity tool, traffic despite Tors main
+firewall and blocked Tor, a Internet anonymity tool, traffic despite Tor's main
 focused intent on preventing such things from ever happening.
 \cite{IranBlocksTorSameDayFix} Later that day the Tor project released a patch
 which circumvent Iran's firewall filters and suggested users of Tor to upgrade
@@ -44,7 +48,7 @@ to version Tor 0.2.2.33 or Tor 0.2.3.4-alpha.\cite{IranBlocksTorSameDayFix}
 
 In this paper we utilize the Software Engineering Code of Ethics to see if Tor
 and The Tor Project were ethical in this patch. We focus on two main parts in
-regarding the ethics of the releas and the Tor project. We first see if the
+regarding the ethics of the release and the Tor project. We first see if the
 release of the Tor software was ethical and secondly we examine if Tor is
 ethical in features of the software it tries to provide.
 
@@ -55,7 +59,7 @@ ethical in features of the software it tries to provide.
 
 \newpage
 
-\thispagestyle{empty}  %Remove page number from TOC 
+\pagenumbering{gobble}
 
 \tableofcontents
 
@@ -63,7 +67,7 @@ ethical in features of the software it tries to provide.
 
 %end the 1 column format
 
-
+\pagenumbering{arabic}
 %start 2 column format
 \begin{multicols}{2}
 %Start numbering first page of content as page 1
@@ -110,9 +114,9 @@ it, both in English and in Farsi.'' \cite{WhyTwitterIsTheMedium}
 Iran's government tried to douse out the dissent. They sent
 Revolutionary Guards into the streets, cut off the Internet, and shut down
 cell-phone communications. \cite{TheIranianVote} The government didn't stop
-there, they began to specifically arresting, ``at least 500 activists,
+there, they began specifically arresting, ``at least 500 activists,
 opposition figures, journalists.'' \cite{IranProtestsFifthDayOfUnrest} The
-Iranian government didn't stop at just arresting protesters they made certain
+Iranian government didn't stop at just arresting protesters; they made certain
 locations of protest a threat to life. The government publicly announced that
 the police had orders to shoot anyone approaching the Interior Ministry.
 \cite{TheIranianVote} Online, the government filtered their Internet traffic and
@@ -145,7 +149,7 @@ Tor.
 
 Tor\footnote{In this paper when the term `Tor' is used it will refer to the
 software.} is software that connects and participates in the Tor network that
-provides users a means way of connecting with websites that is encrypted and
+provides users a means of connecting with websites that is encrypted and
 anonymous. In short, The Tor Project publicizes that, ``The Tor software is a
 program you can run on your computer that helps keep you safe on the
 Internet.''\cite{Tor:FAQ} 
@@ -197,8 +201,7 @@ content.\cite{CensorshipFearsRise} It is true that immoral and illegal content
 exists on the Internet and Tor can be used to facilitate child porn and
 drugs.\cite{Tor:ChildPorn, Tor:SilkRoad} We can safely assume that the Iranian
 government finds Tor to be unethical because it can allow people to bypass what
-they consider to be necessary Internet filters that the Iranian government has
-specifically blocked Tor.\cite{IranBlocksTorSameDayFix}
+they consider to be necessary Internet filters.\cite{IranBlocksTorSameDayFix}
 
 \subsection{Arguments For Tor}
 
@@ -215,16 +218,16 @@ Security Researcher, and Developer for The Tor Project, feels that
   speech.''\cite{Tor:ArgumentForAppelbaum}
 
 \end{quotation}
-Despite Tor's negative possible uses it gives its users, 
-"anonymity [, which] is not only a core value of the digital age, it is a vital
-underpinning of the right to free speech."\cite{TorCreatesSaferInternet}
+Despite Tor's possible negative uses it gives its users, 
+``anonymity[, which] is not only a core value of the digital age, it is a vital
+underpinning of the right to free speech.''\cite{TorCreatesSaferInternet}
 
 \subsection{Arguments Summary}
 
-Tor brings up the debated issue of whether people should have anonymity and if so
-how much. On one hand it can be a tool to facilitate malicious behavior in the
-world, or as a tool to subvert the rules imposing a nations moral framework. On
-the other hand it is argued that even though it can be used for bad on whole it
+Tor brings up the debated issue of whether people should have anonymity, and if so
+how much. On one hand, it can be a tool to facilitate malicious behavior in the
+world, or used as a tool to subvert the rules imposing a nations moral framework. On
+the other hand it is argued that even though it can be used for bad, on the whole, it
 is  better that good people are empowered with this tool so they can exercise
 their fundamental rights of privacy and freedom of speech.
 
@@ -233,8 +236,8 @@ their fundamental rights of privacy and freedom of speech.
 %%%%%%%%%%%%%%%%
 \section{Analysis}
 
-For or us analyze the research question and see if The Tor
-Project was ethical we need to utilize an ethical system as a framework
+For us to analyze the research question and see if The Tor
+Project was ethical, we need to utilize an ethical system as a framework
 to guide the analysis and and as a foundation to determine what is and is
 not ethical. This paper will use the Association for Computing
 Machinery's\footnote{On ACM's `About' webpage it states that, ``ACM is widely
@@ -256,7 +259,7 @@ non-profit based in the United States that makes Internet anonymity
 software.\cite{Tor:FAQ, Tor:CorePeople} Their Mission Statement states that,
 
 \begin{quotation}
-  ``the Corporation is organized and shall be operated exclusively for scientific,
+  ``The Corporation is organized and shall be operated exclusively for scientific,
   charitable and educational purposes ... to develop, improve and distribute
   free, publicly available tools and \textbf{programs} that promote free speech, free
 expression, civic engagement and privacy rights online''\footnote{ The entirety
@@ -270,8 +273,8 @@ Code's preamble. The Oxford Dictionary defines software as, ``the programs and o
 information used by a computer.''\cite{defn:Software} Using the Oxford
 Dictionary's definition it equates software with programs used by a computer.
 Taking Oxford's definition and applying it to Tor's Mission Statement we would
-get, ``... to develop, improve and distribute free, publicly available tools and
-\textbf{software} that promote ...''
+get, ``to develop, improve and distribute free, publicly available tools and
+\textbf{software} that promote.''
 Because the Tor Project develops, and distributes software, this means they, ``contribute by
 direct participation ...  to the analysis, specification, design, development,
 ... , maintenance and testing of software systems'' and thus are Software
@@ -284,11 +287,11 @@ Engineering Code of Ethics.\cite{Tor:FAQ, Tor:Overview}
 To begin our analysis we should examine what sort of considerations were made by
 The Tor Project surrounding the release of the patch of Tor on September 14, the
 same day that Iran added filters to block out Tor traffic in their firewall. It
-is important to examine there consideration because within The Tor Project's
+is important to examine their consideration because within The Tor Project's
 blog post titled \textit{Iran blocks Tor; Tor releases same-day fix} it states,
 ``once enough relays and bridges upgrade, the many tens of thousands of Tor
 users in Iran will resume being able to reach the Tor network, without needing
-to change their software.''\cite{Tor:SameDayFix} This means that The Tor Project
+to change their software.''\cite{IranBlocksTorSameDayFix} This means that The Tor Project
 were directly responding to Iran's current affairs and acknowledging that it
 would impact users in Iran. The tenet of the SE code that would best allow us
 to examine a consideration the release of the Tor patch would be tenet 1.07. It
@@ -326,7 +329,7 @@ research questions we can construct the modified SE Code.
 \end{center}
 \smallskip
 For us to effectively analyze the domain of research question using our modified
-SE Code we need construct specific questions as points of analysis. First, how
+SE Code we need to construct specific questions as points of analysis. First, how
 did Tor circumvent Iran's firewall?  Second, how did the Tor software patch
 affect uncensored Internet access?  Lastly, was Tor ethical under SE Code 1.07?
 
@@ -348,22 +351,22 @@ rules on their routers, and the ability to turn off the Internet all together.
 \paragraph{Censorship} 
 
 It is one thing for the Iranian government have control over Iran's
-Internet, but is it on within their power to actually censor and monitor DCI's
+Internet, but is it within their power to actually censor and monitor DCI's
 Internet users? In 2009 DCI, for a brief period took down the entire Internet in 
 Iran.\cite{FindingWayAroundIranianCensorship} Specific websites such a
 Facebook, Youtube, Twitter, and Google had been blocked from access.\cite{
 FindingWayAroundIranianCensorship, IransElectronicCurtain} The blocking of
-these sites does not just block what Iran's government may consider illegitimate
-use of such websites, it  blocks legitimate use of these sites by Iranians and
-for those whom they may be trying to communicate with using these sites under
+these sites did not just block what Iran's government may consider illegitimate
+use of such websites, it  blocked legitimate use of these sites 
+for Iranians who others may be trying to communicate with using these sites under
 Iran's ethical framework. The Iranian government also took measures to filter
 SSL traffic and specifically the Tor network.\cite{Tor:IranPartiallyBlocksSSL,
 IranBlocksTorSameDayFix} Blocking SSL traffic may appear just a means for the
 government to filter and monitor Internet traffic but it has larger
 implications. Encrypting network traffic is fundamental for Internet users to
 protect themselves from malicious people gathering sensitive information like
-passwords, banking informations, and medical information. Given Iran's power
-over DCI and their past and current actions they have taken to exercise that
+passwords, banking informations, and medical information. Iran's power
+over DCI as well as their past and current actions they have taken to exercise that
 power demonstrates, that they want to control the information and communications
 of its people, especially Iranian dissidents.
 
@@ -371,7 +374,7 @@ of its people, especially Iranian dissidents.
 \subsubsection{How did Tor circumvent Iran's firewall?}
 
 Now that we have an understanding what the Iranian firewall is capable of it is
-important to examining how Tor is capable of bypassing it.
+important to examine how Tor is capable of bypassing it.
 
 \paragraph{How Tor Works}
 \label{HowTorWorks}
@@ -397,15 +400,16 @@ to the next to reach Alice. In this analogy it will go from Zulu to Yankee to
 X-ray and finally Alice. Before Bill does anything else he a devises a unique
 means for each envelope to only be able to be opened by the recipient of that
 letter and exchanges that information to said recipient.  Then he takes his letter addressed to Alice from Bob and then
-puts it in the first envelope addressed From Yankee to X-ray.  Then Bob puts first
-envelope into a second envelope addressed from Zulu to Yankee.  Finally puts the second
+puts it in the first envelope addressed From Yankee to X-ray.  Then Bob puts the first
+envelope into a second envelope addressed from Zulu to Yankee.  Finally, Bob puts the second
 envelope inside a third envelope addressed from Bill to Zulu.  Then he sends
 this triple wrapped letter off to Zulu.  As each friend receives their envelope addressed to them
 they open it and send it off to the friend it is stated on the envelope.  This
 way, no one along the path from Bill to Alice, except for Bill, knows the source address of
 Bill and the destination address of Alice at the same time.  The
 only ones who can read the message is X-ray and Alice. This is basically how Tor
-software works. It should be noted that putting an envelope around the original letter
+software works. It should be noted that putting an envelope around the original
+letter, protecting Bob's message addressed to Alice from X-ray,
 before it's encased by the envelopes for Zulu, Yankee, and X-ray is out of
 the scope of the Tor protocol.
 
@@ -440,9 +444,9 @@ that could have impacted the decision process of release.
 The Tor Project takes Tor and the Tor network very seriously and critically.
 They openly admit that their software is not perfect by any means. Despite this,
 there have been considerable amounts of academic and government research on
-anonymity networks and revision of the Tor project.\cite{Tor:ResearchPapers}
+anonymity networks and revision of the Tor project.\cite{Tor:ResearchPaper}
 Tor's source code and design documents are fully open to the public to review
-and scrutiny, it is even stated on The Tor Project's `Research Ideas'
+and scrutinize, it is even stated on The Tor Project's `Research Ideas'
 web-page that, ``we need people to attack the system, quantify defenses, etc.''\cite{
 Tor:ResearchIdeas, Tor:2011} Since open source code and design documents
 might not be enough  they provide a growing repository of tools to take metrics
@@ -501,7 +505,7 @@ release of the patch.
 \subsubsection{Was Tor ethical under SE Code 1.07?} 
 
 As we examined the research questions under our domain specific SE Code tenet
-1.07 we focused on two questions, ``how did Tor circumvent Iran's firewall?''
+1.07 we focused on two questions, ``how did Tor circumvented Iran's firewall?''
 and ``how did the Tor software patch affect uncensored Internet access?'' to
 determine whether Tor was ethical. In regards to our first question Tor
 circumvented Iran's oppressive censoring by a passive means. Tor didn't actively
@@ -553,7 +557,7 @@ research questions we can construct the modified SE Code.
 }}
 \end{center}
 \smallskip
-For us to effectively analyze the domain of research question using our modified
+For us to effectively analyze the domain of our research question using our modified
 SE Code we need examine specific topics as as points of analysis.  First, what
 is the state of freedom of expression in Iran? Second, does Tor software
 promote freedom of expression in Iran? Third, what is the financial cost for
@@ -621,20 +625,20 @@ by which they agreed to comply with.
 
 At this point we should examine censorship of Iranian government and highlight
 how it impacts freedom of expression in Iran. As examined before we defined
-freedom of freedom expression to include those who publish information and those
-who to try to read that publish information. This definitions is important
+freedom of expression to include those who publish information and those
+who try to read that published information. This definition is important
 because the nature of press and expression of what was happening in Iran was via
-the Internet . We also examined how that the Iranian government by becoming a
-Member State of the United Nations agreed to comply with Article 19 of the
+the Internet . We also examined how the Iranian government, by becoming a
+Member State of the United Nations, agreed to comply with Article 19 of the
 \textit{The Universal Declaration of Human Rights}. Now we need to see if Iran
 promotes our definition of freedom of expression and complies with their
 agreement of Article 19.
 
-For us to examine and see if Iran censors its citizens we need to compare it
+For us to examine and see if Iran censors its citizens we need to compare it to
 what Internet access is like in other countries. In 2011, Freedom House, an
 organization that is, ``an independent watchdog organization dedicated to the
 expansion of freedom around the world.''\cite{FreedomHouse}, stated that Iran,
-in 2011, was least free country in the world in regards to Internet
+in 2011, was the least free country in the world in regards to Internet
 freedom.\cite{FreedomOnNet2011, ONI:IranWorst} Given this knowledge we can say
 that Iran does censor its citizens and in terms of expression of freedom as we
 defined breaks its agreement with Article 19 of \textit{The Universal
@@ -657,22 +661,22 @@ Declaration of Human Rights}.
 
 \subsubsection{Does Tor promote freedom of expression?}
 
-It is important to take note of not only the actions that is taken, or in this
+It is important to take note of not only the actions that are taken, or in this
 case what Tor software has done and provides users, but the driving ethos behind
 the project by the projects maintainers, The Tor Project.
 
 \paragraph{Tor Projects's Ethos}
 
 Examining the ethos of The Tor Project allows us to see if it has 
-intentions that try address issues and if The Tor Project abides by its own guiding principles. The Tor
-Project's ethos in it's totality can be seen in its \textit{Mission Statement}
+intentions that try to address issues and if The Tor Project abides by its own guiding principles. The Tor
+Project's ethos in, it's totality, can be seen in its \textit{Mission Statement}
 as in Appendix \ref{Tor:MissionStatement}, but more succinctly from their website,
 \begin{quotation}  
   ``The Tor project is based on the belief that anonymity is not just a good
   idea some of the time — it is a requirement for a free and functioning
   society.''\cite{Tor:Users}
 \end{quotation}
-The Tor Project's ethos shows us that their guiding principles is to promote
+The Tor Project's ethos shows us that their guiding principle is to promote
 the same freedoms that Article 19 from \textit{The Universal Declaration of Human Rights}
 requests Iran to comply with and complies with the modified SE Code. Their
 intentions alone are not enough to see if they promote free speech, we need to
@@ -692,8 +696,8 @@ and monitor network traffic of Tor users.
 The Tor Project has been acknowledged and promoted for its abilities to provide
 privacy and free speech by the Free Software Foundation and the Electronic
 Frontier Foundation.
-The Free Software Foundation (FSF), an nonprofit organization that, ``[promotes]
-promote computer user freedom and to defend the rights of all free software
+The Free Software Foundation (FSF), a nonprofit organization that, ``promote[s]
+computer user freedom and to defend the rights of all free software
 users.''\cite{FSF:About}, bestowed The Tor Project the Free Software Award of 2010
 for
 \begin{quotation}
@@ -774,7 +778,7 @@ appears origin of what is relevant to this paper.}
 horizontally?'', Iranian Member of Parliament, Ahmed Bakhshayes, asked the Iranian Parliament on
 November 14, 2012.\cite{IranBloggersDeath} The Iranian government has been
 responding to political dissidence by putting people to death. In the past ten
-years at least eighteen people have died in while imprisoned by the Iranian
+years at least eighteen people have died while imprisoned by the Iranian
 government, including the Iranian-Canadian photographer Zahra Kazemi, student
 activist Amir Javadifar, a journalist Hoda Saber, and most recently a 35 year
 old blogger, Sattar Beheshti. \cite{IranBloggersDeath}
@@ -796,17 +800,17 @@ Iranian dissidents from physical oppression.
 
 \subsubsection{Was Tor ethical under SE code 3.03?}
 
-Now that we have addressed all the focal points of analysis did Tor address
-freedom of expression, financial costs, and physical oppression of dissidents.
-In regards to freedom of expression the Tor Project's ethos is the driving force
+Now that we have addressed all the focal points of analysis, did Tor address
+freedom of expression, financial costs, and physical oppression of dissidents?
+In regards to freedom of expression, the Tor Project's ethos is the driving force
 behind Tor which strives and effectively promotes free speech around the world.
 Relating to financial costs, Tor is open source and free which not only prevents
 anyone from immediate use due to financial issues but it provides a groundwork
 for future development and intellectual capital that Iranian dissidents can
-utilize if needed. Lastly Tor's privacy by design while it does not gaurentee
-Iranian dissidents from physical oppression gives a strong barrier of protection
+utilize if needed. Lastly Tor's privacy by design, while it does not guarantee
+Iranian dissidents from physical oppression, gives a strong barrier of protection
 between them and the Iranian government. Through examining all of the questions
-as focus points for analysis of tenet 3.03 of the SE Code Tor has addressed,
+as focus points for analysis of tenet 3.03 of the SE Code, Tor has addressed,
 freedom of oppresion, financial cost, and physical oppression related to Tor
 software in Iran. Because of this Tor was ethical under SE code 3.03.
 
@@ -819,7 +823,7 @@ The Tor Project's consideration of the the release of the Tor patch and Tor
 providing free and transparent means of private and uncensored Internet access
 has aided Iranian dissidents. The Tor Project and Tor have been seen to be
 ethical under both tenet 3.03 and 1.07 of the SE Code. Tor and The Tor Project
-while they provide a means to an end for Iranian dissidents obtain the private
+provides a means to an end for Iranian dissidents in obtaining the private
 communications they desire. Roger Dingledine, a Project Leader, Director, and
 Research for The Tor Project\cite{Tor:CorePeople}, during a talk about Tor last
 year stated that, ``it should not be up to me how [Iran] \footnote{This quote
@@ -831,6 +835,12 @@ year stated that, ``it should not be up to me how [Iran] \footnote{This quote
   patch enabling Iranians to bypass Iran's firewall when the government
   explicitly filtered Tor traffic starting September 14, 2011, under the SE
   Code of ethics.
+
+\section{Acknowledgements}
+
+The author is grateful for the help received from Jake Tobin and K.T. Nelson.
+Jake Tobin helped the author architect, and edit the paper. K.T. helped to edit
+and refine the paper. 
 
 
 %end the two column format
